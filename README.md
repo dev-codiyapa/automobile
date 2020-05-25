@@ -1,8 +1,13 @@
 #Project name:  automobile
+
 #used packes: npm
+
 #language: javaScript, typeScript
+
 #framework: ReactJs
+
 #Author: Harekrishna Murari
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
