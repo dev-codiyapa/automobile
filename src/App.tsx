@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Home from "./desktop/pages/home/Home.component";
+import MobileHome from "./mobile/pages/Home/MobileHome.component";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface IAppState {
+  width: number;
 }
+interface IAppProps {}
 
+class App extends React.Component<IAppProps, IAppState> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      width: window.innerWidth
+    };
+  }
+  componentDidMount() {
+    window.addEventListener("resize", this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
+  render() {
+    const width = this.state.width;
+    const isMobile = width <= 1190;
+    return (
+      <>
+        {isMobile ? (
+          <Router>
+            <Switch>
+              <Route exact path="/" component={MobileHome} />
+            </Switch>
+          </Router>
+        ) : (
+          <Router>
+            <Switch>
+              <Route exact path="/" component={Home} />
+            </Switch>
+          </Router>
+        )}
+      </>
+    );
+  }
+}
 export default App;

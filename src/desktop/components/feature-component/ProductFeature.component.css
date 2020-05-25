@@ -1,0 +1,22 @@
+.feature-product-content{
+    padding: 35px;
+}
+.feature-product-heading{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 22px;
+    color: #000;
+}
+.feature-content-heading{
+    font-weight: 900;
+    font-size: 28px;
+    color: #222222;
+    line-height: 1;
+}
+.feature-product-btn{
+    outline: none;
+    border-radius: 22px;
+    background: #0aa200;
+    color: #fff;
+    padding: 3px 30px;
+}

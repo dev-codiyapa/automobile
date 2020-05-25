@@ -1,0 +1,44 @@
+.page-header {
+  background-image: url(../../../static//images//header-img.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  height: 100vh;
+}
+.header button:not(.schedule-btn) {
+  color: #582c83;
+}
+.header {
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 85%, 0.5);
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+.title-first-text {
+  font-size: 16px;
+  font-weight: 900;
+}
+.page-header .ant-page-header-heading-title {
+  color: #582c83;
+}
+.header-right-section {
+  float: right;
+}
+.schedule-btn {
+  background: #0aa200;
+  color: #fff;
+  border-radius: 20px;
+  outline: none;
+  padding: 5px 20px;
+}
+
+.feature-product {
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 30%;
+}

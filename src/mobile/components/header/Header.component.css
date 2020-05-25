@@ -1,0 +1,66 @@
+.mobile-container {
+  margin: auto;
+  background-image: url(../../../static//images//header-img.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  height: 100vh;
+}
+
+.topnav {
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 85%, 0.5);
+  background: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+.topnav a{
+  text-decoration: none !important;
+}
+.topnav .info-link {
+  display: block;
+  background: #fafafa;
+  text-align: left;
+  line-height: 0.5;
+}
+.topnav .info-link a {
+  font-size: 14px;
+}
+.topnav .info-link a:first-child {
+  padding-top: 22px;
+}
+.topnav .info-link a:last-child {
+  padding-bottom: 22px;
+}
+.topnav a {
+  color: #582c83;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  color: #582c83;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.mobile-feature-product {
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translate(-100%, -40%);
+  background: #ffffff;
+  width: 50%;
+}
+.schedule-btn {
+  background: #0aa200;
+  color: #fff;
+  border-radius: 20px;
+  outline: none;
+  padding: 5px 20px;
+  width: 50%;
+}
