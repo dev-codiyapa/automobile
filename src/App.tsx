@@ -10,6 +10,7 @@ interface IAppState {
 interface IAppProps {}
 
 class App extends React.Component<IAppProps, IAppState> {
+  /*
   constructor(props: any) {
     super(props);
     this.state = {
@@ -46,6 +47,15 @@ class App extends React.Component<IAppProps, IAppState> {
             </Switch>
           </Router>
         )}
+      </>
+    );
+  }
+  */
+
+  render() {
+    return (
+      <>
+        <MobileHome />
       </>
     );
   }

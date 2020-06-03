@@ -23,29 +23,32 @@ class MobileHeader extends React.Component<
     return (
       <>
         <div className="mobile-container">
-          <div className="topnav">
-            <a href="#home" className="logo">
+          <div
+            className={this.state.isDropDownOpen ? "topnav responsive":"topnav"}
+            id="myTopnav"
+          >
+            <a href="#home" className="active logo">
               <span className="title-first-text">athena</span>
               <span className="title-second-text">health</span>
             </a>
-            <a href="#" className="icon" onClick={this.handleClick}>
+            <a href="#Login">Login</a>
+            <a
+              href="javascript:void(0);"
+              className="icon"
+              onClick={this.handleClick}
+            >
               <span>
                 <AlignCenterOutlined />
               </span>{" "}
               Menu{" "}
             </a>
-            {this.state.isDropDownOpen ? (
-              <div className="info-link">
-                <a href="#services">Services</a>
-                <a href="#choose_ud">Why Choose us</a>
-                <a href="#about">About</a>
-                <a href="#resources">Resources</a>
-                <a href="#schedule" className="schedule-btn">
-                  Schedule a 1:1 meeting
-                </a>
-                <a href="#Login">Login</a>
-              </div>
-            ) : null}
+            <a href="#schedule" className="schedule-btn">
+              Schedule a 1:1 meeting
+            </a>
+            <a href="#resources">Resources</a>
+            <a href="#about">About</a>
+            <a href="#choose_ud">Why Choose us</a>
+            <a href="#services">Services</a>
           </div>
         </div>
         <div className="mobile-header-section">
