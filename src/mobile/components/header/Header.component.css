@@ -34,6 +34,9 @@
 .topnav a.active {
   color: #582c83;
 }
+.logo .title-first-text{
+  font-weight: 900;
+}
 .topnav .icon {
   display: none;
 }
@@ -67,6 +70,9 @@
   }
 }
 @media screen and (max-width: 920px) {
+  .logo{
+    margin-left: 20px;
+  }
   .mobile-feature-product {
     position: absolute;
     top: 50%;
@@ -86,6 +92,9 @@
 }
 
 @media screen and (min-width: 920px) {
+  .logo{
+    margin-left: 100px;
+  }
   .schedule-btn{
     background: #0aa200;
     color: #fff !important;
