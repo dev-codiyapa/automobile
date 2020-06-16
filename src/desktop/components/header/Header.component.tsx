@@ -15,8 +15,8 @@ const Header: React.FC<IHeaderProps> = () => {
                 ghost={false}
                 title={
                   <div>
-                    <span className="title-first-text">athena</span>
-                    <span className="title-second-text">health</span>
+                    <span className="title-first-text">auto</span>
+                    <span className="title-second-text">Mobile</span>
                   </div>
                 }
                 extra={[

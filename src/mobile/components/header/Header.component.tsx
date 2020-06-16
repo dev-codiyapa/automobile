@@ -28,8 +28,8 @@ class MobileHeader extends React.Component<
             id="myTopnav"
           >
             <a href="#home" className="active logo">
-              <span className="title-first-text">athena</span>
-              <span className="title-second-text">health</span>
+              <span className="title-first-text">auto</span>
+              <span className="title-second-text">Mobile</span>
             </a>
             <a href="#Login">Login</a>
             <a
