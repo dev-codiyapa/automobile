@@ -57,6 +57,7 @@
   }
   .topnav.responsive a {
     position: relative;
+    background:#fafafa;
   }
   .topnav.responsive .icon {
     position: absolute;
@@ -82,12 +83,11 @@
     width: 50%;
   }
   .schedule-btn{
-    background: #0aa200;
+    background: #0aa200 !important;
     color: #fff !important;
     border-radius: 20px;
     outline: none;
     padding: 5px 20px !important;
-    width: 50%;
   }
 }
 
@@ -96,7 +96,7 @@
     margin-left: 100px;
   }
   .schedule-btn{
-    background: #0aa200;
+    background: #0aa200 !important;
     color: #fff !important;
     border-radius: 20px;
     outline: none;
